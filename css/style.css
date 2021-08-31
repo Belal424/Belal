@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    scroll-behavior: smooth;
+    letter-spacing: 3px;
+}
+.container {
+    width: 80%;
+    margin-left: 10%;
+    padding: 10px;
+}
+:root {
+    --color : #2F78EE;
+}
+.special-heading {
+    text-align: center;
+    color: #929292;
+    margin: 50px 0;
+    font-size: 100px;
+}
+.special-heading span {
+    color: var(--color);
+}
+/* Start Header */
+
+.header {
+    box-shadow: #000 0px -10px 20px 0px;
+    -ms-box-shadow: #000 0px -10px 20px 0px;
+    -o-box-shadow: #000 0px -10px 20px 0px;
+    -moz-box-shadow: #000 0px -10px 20px 0px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+}
+.header .logo {
+    font-size: 50px;
+    display: inline;
+    font-weight: bold;
+}
+.header .menu-btn {
+    float: right;
+    margin-top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.header .close-btn {
+    float: right;
+    margin-top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.header .menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    height: calc(100vh - 74px);
+    background-color: #192f52;
+    width: 200px;
+    transition: 1.5s;
+    font-size: 30px;
+}
+.header .menu ul li{
+    list-style: none;
+    padding: 50px;
+    transition: .5s;
+}
+.header .menu ul a {
+    text-decoration: none;
+    color: #fff;
+}
+.header .menu ul li:hover {
+    padding: 70px 70px 70px 90px;
+}
+/* End Header */
+/* Start home */
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.home .col {
+    width: calc(100% / 2);
+}
+.home .col img{
+    max-width: 100%;
+    margin-top: 75px;
+}
+.home .btn img {
+    width: 100px;
+    margin: -40px 25px;
+}
+.home .text p {
+    line-height: 1.6;
+    font-size: 50px;
+    margin-top: 100px;
+    font-weight: bold;
+}
+.home .text p span {
+    color: var(--color);
+}
+.home .text .btn {
+    margin: 25px 0;
+    width: 150px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    background-color: var(--color);
+    cursor: pointer;
+}
+/* End home */
+/* Start work */
+.work {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    grid-gap: 30px;
+}
+.box {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.box .card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 1s;
+}
+.card .img {
+    overflow: hidden;
+    border-radius: 50px;
+}
+.front{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.box:hover .front{
+    transform: translate(0,-200%);
+    opacity: 0;
+}
+.box .card .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+.card .img {
+    height: 100%;
+    width: 100%;
+}
+.card img {
+    max-width: 100%;
+}
+.front img {
+    height:100%;
+    width: 100%;
+}
+.back .img img{
+    transition: 1s;
+}
+.box:nth-child(3) .back .img img {
+    height: 100%;
+    width: 100%;
+}
+.box:nth-child(4) .back .img img {
+    height: 100%;
+    width: 100%;
+}
+.box:hover .back .img img:hover{
+    transform: translate(0, calc(-100% + 200px));
+}
+.work .card {
+    box-shadow: #00000057 0px 0px 20px 0px;
+    -o-box-shadow: #00000057 0px 0px 20px 0px;
+    -moz-box-shadow: #00000057 0px 0px 20px 0px;
+    -ms-box-shadow: #00000057 0px 0px 20px 0px;
+}
+/* End work */
+/* Start skills */
+.skills {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.skills .img img {
+    max-width: 100%;
+    margin-top: 100px;
+}
+.skills-progress {
+    width: 100%;
+}
+.skills-progress .bar{
+    margin: 20px 0;
+    border: 2px solid;
+    border-radius: 25px;
+    width: 100%;
+}
+.skills-progress p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.skills-progress .bar .progress {
+    background-color: var(--color);
+    border-radius: 25px;
+    padding: 10px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+.skills-progress .html {
+    width: 88%;
+}
+.skills-progress .css {
+    width: 72%;
+}
+.skills-progress .js {
+    width: 61%;
+}
+.skills-progress .ui {
+    width: 70%;
+}
+/* End skills */
+/* Start Contact */
+.contact h2{
+    font-size: 50px;
+    margin: 0 0 15px;
+}
+.contact a {
+    color: var(--color);
+    font-size: 30px;
+    padding: 50px;
+    font-weight: bold;
+}
+.contact h3 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+.contact .icons {
+    font-size: 30px;
+    margin: 0 0 50px 50px;
+    color: var(--color);
+}
+.contact .icons a{
+    padding: 3px;
+}
+/* End Contact */
+/* Start Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    background: #192f52;
+    color: #fff;
+    font-size: 30px;
+}
+.footer span {
+    color : var(--color)
+}
+/* End Footer */
+/* Media */
+@media (max-width: 762px){
+    .header .menu {
+        top: 94px;
+        width: 150px;
+        font-size: 15px;
+    }
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    .special-heading {
+        font-size: 50px;
+    }
+    .home img{
+        margin-top: 25px;
+    }
+    .home .text p {
+        line-height: 1.2;
+        font-size: 40px;
+        margin-top: 25px;
+        font-weight: bold;
+    }
+    .skills {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .skills .img img {
+        display: none;
+    }
+    .card .img {
+        height: 500px;
+        border-radius: 25px;
+    }
+    .work .card img {
+        border-radius: 25px;
+    }
+}
+@media (max-width: 476px){
+    .header .menu {
+        width: 100px;
+    }
+    .header .menu ul li{
+        padding: 35px;
+    }
+    .header .menu ul li:hover {
+        padding: 35px 35px 35px 45px;
+    }
+    .home {
+        margin-top: 50px;
+    }
+    .home .text p {
+        font-size: 20px;
+    }
+    .card {
+        height: 200px;
+    }
+    .contact h2{
+        font-size: 30px;
+    }
+    .contact a {
+        font-size: 20px;
+        padding: 30px;
+    }
+    .contact h3 {
+        font-size: 15px;
+        margin: 7px 0;
+    }
+    .contact .icons {
+        font-size: 15px;
+        margin: 0 0 25px 25px;
+    }
+    .contact .icons a{
+        padding: 1px;
+    }
+    .footer {
+        font-size: 15px;
+    }
+}
