@@ -320,11 +320,28 @@
     .header .menu ul li:hover {
         padding: 35px 35px 35px 45px;
     }
+    .header .menu-btn {
+    font-size: 20px;
+    }
+    .header{
+    height: 70px;
+    }
+    .header .logo {
+    font-size: 35px;
+    }
     .home {
         margin-top: 50px;
     }
     .home .text p {
         font-size: 20px;
+    }
+    .home .btn {
+    width: 80px;
+    height: 25px;
+    }
+    .home .btn img {
+    width: 50px;
+    margin: -15px 15px;
     }
     .card {
         height: 200px;
