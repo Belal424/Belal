@@ -281,7 +281,7 @@
         font-size: 50px;
     }
     .home img{
-        margin-top: 25px;
+        display:none;
     }
     .home .text p {
         line-height: 1.2;
