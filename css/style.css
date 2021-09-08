@@ -280,12 +280,15 @@
     .special-heading {
         font-size: 50px;
     }
-    .home img{
-        display:none;
+    .home .img {
+        display: none;
+    }
+    .home .col {
+        width: 100%;
     }
     .home .text p {
         line-height: 1.2;
-        font-size: 40px;
+        font-size: 70px;
         margin-top: 25px;
         font-weight: bold;
     }
@@ -372,9 +375,6 @@
     }
     .home {
         margin-top: 50px;
-    }
-    .home .text p {
-        font-size: 20px;
     }
     .header .menu-btn {
     font-size: 20px;
