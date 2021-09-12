@@ -274,8 +274,14 @@
 /* Media */
 @media (max-width: 762px){
     .header .menu {
+        top: 94px;
         width: 150px;
         font-size: 15px;
+    }
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
     }
     .special-heading {
         font-size: 50px;
@@ -292,40 +298,6 @@
         margin-top: 25px;
         font-weight: bold;
     }
-    .header .menu-btn {
-    font-size: 20px;
-    }
-    .home .text .btn {
-    width: 75px;
-    height: 30px;
-    }
-    .home .btn img {
-    width: 50px;
-    margin: -16px 12px;
-    }
-    .header{
-    height: 60px;
-    }
-    .header .menu {
-    top:60px;
-    }
-    .header .logo {
-    font-size: 35px;
-    }
-    .home {
-        margin-top: 50px;
-    }
-    .home .text p {
-        font-size: 20px;
-    }
-    .home .btn {
-    width: 80px;
-    height: 25px;
-    }
-    .home .btn img {
-    width: 50px;
-    margin: -15px 15px;
-    }
     .skills {
         display: grid;
         grid-template-columns: 100%;
@@ -340,19 +312,6 @@
     .work .card img {
         border-radius: 25px;
     }
-    .contact h2 {
-    font-size: 37px;
-    }
-    .contact a {
-    font-size: 20px;
-    padding: 40px;
-    }
-    .contact h3 {
-    font-size: 30px;
-    }
-    .contact .icons {
-    font-size: 20px;
-    }
 }
 @media (max-width: 476px){
     .header .menu {
@@ -364,58 +323,15 @@
     .header .menu ul li:hover {
         padding: 35px 35px 35px 45px;
     }
-    .header .menu-btn {
-    font-size: 20px;
-    }
-    .header{
-    height: 70px;
-    }
-    .header .logo {
-    font-size: 35px;
-    }
-    .home {
-        margin-top: 50px;
-    }
-    .header .menu-btn {
-    font-size: 20px;
-    }
-    .home .text .btn {
-    width: 75px;
-    height: 30px;
-    }
-    .home .btn img {
-    width: 50px;
-    margin: -16px 12px;
-    }
-    .header{
-    height: 60px;
-    }
-    .header .logo {
-    font-size: 35px;
-    }
-    .home {
-        margin-top: 50px;
-    }
-    .home .text p {
-        font-size: 20px;
-    }
-    .home .btn {
-    width: 80px;
-    height: 25px;
-    }
-    .home .btn img {
-    width: 50px;
-    margin: -15px 15px;
-    }
     .card {
         height: 200px;
     }
-    .contact h2 {
-    font-size: 25px;
+    .contact h2{
+        font-size: 30px;
     }
     .contact a {
-    font-size: 16px;
-    padding: 13px;
+        font-size: 20px;
+        padding: 30px;
     }
     .contact h3 {
         font-size: 15px;
